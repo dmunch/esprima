@@ -1798,7 +1798,7 @@ export class Parser {
                     statement = this.parseLexicalDeclaration({ inFor: false });
                     break;
                 case 'function':
-                    statement = this.parseFunctionDeclaration();
+                    statement = this.parseFunctionDeclaration(true);
                     break;
                 case 'class':
                     statement = this.parseClassDeclaration();
